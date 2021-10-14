@@ -1,0 +1,86 @@
+/*
+    Position
+    Box model
+    Texto
+    Visual
+    Varios
+*/
+
+:root {
+  --color-fondo-menu: #fff159;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+  background: lightgray;
+}
+
+.cabecera {
+  grid-column: 1 / 13;
+  grid-row: 1 / 2;
+  background-color: var(--color-fondo-menu);
+  padding: 2px;
+}
+
+.principal {
+  grid-row: 2 / 12;
+  grid-column: 1 / 13;
+  background-color: lightcoral;
+}
+
+.pie-pagina {
+  grid-row: 12 / 13;
+  grid-column: 1 / 13;
+  background-color: lightgreen;
+}
+
+.cabecera .logo-imagen{
+    padding-top: 3px;
+}
+
+.cabecera ul {
+  display: grid;
+  grid-template: 1fr / repeat(4, 1fr);
+  align-items: center;
+  height: 50px;
+  justify-items: center;
+}
+
+.cabecera nav ul li {
+  list-style: none;
+}
+
+.cabecera .caja-busqueda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 3px;
+    height: 33px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+    border-radius: 2px;
+    font-size: 1.8re;
+}
+
+.cabecera .caja-busqueda .lupa-svg{
+    margin-right: 2px;
+}
+
+.cabecera .caja-busqueda input{
+    width: 160px;
+    border: 0;
+    color: #333;
+}
