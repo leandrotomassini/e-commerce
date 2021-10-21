@@ -6,6 +6,8 @@
     Varios
 */
 
+/* General styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -22,118 +24,65 @@
 
 html {
   font-size: 62.5%;
-  color: var(--color-texto-negro);
   font-family: "Open Sans", sans-serif;
+  color: var(--color-texto-negro);
 }
 
-.body .contenedor-menu-principal {
-  font-size: 1.3rem;
-  min-width: 367px;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  background-color: var(--fondo-menu-principal);
-}
-
-/* MENÚ PRINCIPAL */
-.body .contenedor-menu-principal .menu-principal {
+.body {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  list-style: none;
-}
-
-.body .contenedor-menu-principal .banner-texto-cabecera {
-  padding: 0.5rem;
-  display: flex;
-  justify-content: space-around;
-  color: var(--color-texto-negro-banner);
-}
-
-.body .contenedor-menu-principal .banner-texto-cabecera span {
-  padding-top: 0.3rem;
-}
-
-.caja {
-  background-color: lightcoral;
-  border: 1px solid black;
-  width: 200px;
-  height: 200px;
-}
-
-.body .contenedor-menu-principal .caja-buscar {
-  display: flex;
-  background-color: white;
-  padding: 1rem;
-  border-radius: 15rem;
-  width: 75%;
-}
-
-.body .contenedor-menu-principal .caja-buscar input {
-  border: none;
-  width: 85%;
-}
-
-.body .contenedor-menu-principal .caja-buscar input:focus {
-  outline: none;
-}
-
-/* FIN DEL MENÚ PRINCIPAL */
-
-main {
-  padding-top: 10rem;
   background-color: var(--fondo-gris);
 }
 
-.body .slideshow-inicio {
-  padding-top: 1rem;
-  height: 200px;
-  background: linear-gradient(var(--fondo-menu-principal), var(--fondo-gris));
+/* End of general styles */
+
+/* Example boxes */
+
+.body--box {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 150px;
+  font-weight: 300;
+  font-size: 5rem;
+  border: 1px solid black;
+  background-color: lightcoral;
 }
 
-.body .slideshow-inicio img {
-  width: 90%;
-  height: 160px;
-  border-radius: 8px;
+/* End of example boxes */
+
+/* Main menu  */
+.main-menu-container {
+  position: fixed;
+  width: 100%;
+  background-color: var(--fondo-menu-principal);
 }
 
-.body .lista-menu-categorias {
-  padding-bottom: 2rem;
+.main-menu-container__ul {
+  height: 5rem;
+  display: flex;
   list-style: none;
-  font-size: 1.3rem;
-  display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
-}
-
-.body .lista-menu-categorias li {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
   align-items: center;
-  max-width: 65px;
-  text-align: center;
 }
 
-.body .lista-menu-categorias .circulo-blanco {
-  width: 65px;
-  height: 65px;
-  margin-bottom: 1rem;
-  border-radius: 50px;
-  background-color: white;
+.main-menu-container__box-search {
+  width: 280px;
+  padding: 0.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #8c8c8c;
-  box-shadow: 5px 11px 12px -2px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 5px 11px 12px -2px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 5px 11px 12px -2px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 2rem;
 }
 
-.body .lista-menu-categorias .circulo-blanco img {
-  width: 30px;
-  height: 30px;
+.main-menu-container__box-search-input {
+  width: 80%;
+  font-size: 1.5rem;
+  border: 0;
+  padding: 0.5rem;
 }
+
+/* End of main menu  */
