@@ -5,95 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mercado Libre Argentina</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width:600px)">
-    <!-- Fuentes -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <!-- Fin fuentes -->
+    <!-- End of font -->
   </head>
-  <body>
-    <!-- header -->
-    <header class="cabecera">
-      <nav>
-        <ul>
-          <li>
-            <img
-              src="./assets/img/Mercado-Libre-Logo.png"
-              alt="Logo Mercado Libre"
-              class="logo-imagen"
-            />
-          </li>
-          <li class="caja-busqueda">
-            <img
-              src="./assets/svg/search_black_24dp.svg"
-              alt="Lupa"
-              class="lupa-svg"
-            />
-            <input type="text" placeholder="Estoy buscando..." />
-          </li>
-          <li>
-            <img src="./assets/svg/menu_black_24dp.svg" alt="Menu" />
-          </li>
-          <li>
-            <img src="./assets/svg/shopping_cart_black_24dp.svg" alt="Cart" />
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Fin del header -->
+  <body class="body">
 
-    <!-- Contenedor Principal -->
-    <main class="principal">
-      <section class="slider-principal">
-        <img src="./assets/img/banner.jpg" alt="Ofertas de productos">
-      </section>
-      <section class="productos">
-        <h2 class="titulo-contenedor-ofertas">Ofertas</h2>
-    
-        <article class="producto">
-          <img src="./assets/img/productos/smart.png" alt="Smart Tv">
-          <section class="descripcion-oferta-producto">
-            <h4>Smart Tv 32 HItachi Le32smart19 Android Frameless Oficial</h4>
-            <p class="precio-oferta">$ 28.999  <span class="descuento-oferta">9% OFF</span></p>
-            <span class="precio-envio-oferta">Envío gratis</span>
-          </section>
-        </article>
-        <article class="producto">
-          <img src="./assets/img/productos/aire.png" alt="Smart Tv">
-          <section class="descripcion-oferta-producto">
-            <h4>Aire acondicionado Hitachi</h4>
-            <p class="precio-oferta">$ 20.999  <span class="descuento-oferta">40% OFF</span></p>
-            <span class="precio-envio-oferta">Envío gratis</span>
-          </section>
-        </article>
-        <article class="producto">
-          <img src="./assets/img/productos/drone.png" alt="Smart Tv">
-          <section class="descripcion-oferta-producto">
-            <h4>Drone de primera calidad</h4>
-            <p class="precio-oferta">$ 50.999  <span class="descuento-oferta">34% OFF</span></p>
-            <span class="precio-envio-oferta">Envío gratis</span>
-          </section>
-        </article>
-        <article class="producto">
-          <img src="./assets/img/productos/colchon.png" alt="Smart Tv">
-          <section class="descripcion-oferta-producto">
-            <h4>Colchón cannon</h4>
-            <p class="precio-oferta">$ 14.500</p>
-            <span class="precio-envio-oferta">Envío gratis</span>
-          </section>
-        </article>
-  
-        <section class="ver-todas-ofertas">
-          <ul>
-            <li><a href="#">Ver todas</a></li>
-            <li><a href="#">></a></li>
-          </ul>
-        </section>
-      </section>
+      <!-- Main menu -->
+      <header class="main-menu-container">
+          <nav>
+            <ul class="main-menu-container__ul">
+              <li class="main-menu-container__hamburger"><img src="./assets/icons/menu_black_24dp.svg" alt="Menú" class="main-menu-container__img"></li>
+              <li>
+                <div class="main-menu-container__box-search">
+                  <img src="./assets/icons/search_black_24dp.svg" alt="Buscar">
+                  <input type="text" placeholder="Buscar en Mercado Libre" class="main-menu-container__box-search-input">
+                </div>
+              </li>
+              <li class="main-menu-container__cart">
+                <img src="./assets/icons/shopping_cart_black_24dp.svg" alt="Carrito de compras">
+              </li>
+            </ul>
+          </nav>    
+      </header>
+      <!-- End of main menu -->
+      
+      <div class="body--box">1</div>
+      <div class="body--box">2</div>
+      <div class="body--box">3</div>
+      <div class="body--box">4</div>
+      <div class="body--box">5</div>
+      <div class="body--box">6</div>
+      <div class="body--box">7</div>
+      <div class="body--box">8</div>
+      <div class="body--box">9</div>
+      <div class="body--box">10</div>
+      <div class="body--box">11</div>
+      <div class="body--box">12</div>
     </main>
-    <!-- Fin contenedor Principal -->
   </body>
 </html>
